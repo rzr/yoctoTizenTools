@@ -11,5 +11,5 @@ for prj_conf in yoctoTizen_config_romley-ivb      \
                 yoctoTizen_config_genericx86      \
                 yoctoTizen_config_genericx86-64   \
                 ; do
-    echo ${YTUS} --clean --config ${DIR_TOOL}/${prj_conf} --rev-file ${REV_FILE} --build
+    ${YTUS} --clean --config ${DIR_TOOL}/${prj_conf} --rev-file ${REV_FILE} --build
 done
