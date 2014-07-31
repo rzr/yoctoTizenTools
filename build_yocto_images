@@ -1,0 +1,15 @@
+DIR_TOOL=/home/ronanguirec/yoctoTizenTools
+YTUS=${DIR_TOOL}/yoctoTizenUpdateSource
+REV_FILE=/home/ronanguirec/yoctoTizen_rev_0.1
+
+for prj_conf in yoctoTizen_config_romley-ivb      \
+                yoctoTizen_config_haswell-wc      \
+                yoctoTizen_config_valleyisland-64 \
+                yoctoTizen_config_qemuarm         \
+                yoctoTizen_config_qemux86         \
+                yoctoTizen_config_qemux86-64      \
+                yoctoTizen_config_genericx86      \
+                yoctoTizen_config_genericx86-64   \
+                ; do
+    echo ${YTUS} --clean --config ${DIR_TOOL}/${prj_conf} --rev-file ${REV_FILE} --build
+done
