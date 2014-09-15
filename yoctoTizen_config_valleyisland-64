@@ -42,7 +42,9 @@ BUILD_PRJ=build-valleyisland-64
 # The IP address of the target machine (the machine on which Tizen will 
 # be installed).
 # Default value is REMOTE_HOST=localhost
+
 REMOTE_HOST=10.19.3.211
+
 
 # The user to use to connect to the remote machine (or local machine if
 # ${REMOTE_HOST}=localhost)
@@ -63,7 +65,9 @@ REMOTE_WORKINGDIR_DOWNLOADS=/tmp
 
 # The image to build.
 # Default value is IMAGE_NAME=tizen-common-core-image-minimal-dev
+
 IMAGE_NAME=tizen-ivi-core-image-dev
+
 
 # The parition on which Tizen will beinstalled.
 # Default value is YOCTO_PART=yoctoTizen
