@@ -31,13 +31,13 @@ CLONE_CMD=cclone
 # your target architecture
 # Default value is MACHINE=romley-ivb and is the one to use with the
 # VTC1010
-MACHINE=valleyisland-64
+MACHINE=valleyisland-32
 
 # Directory in which the image will be built. The created images and
 # every intermediary files will be found in this directory. This
 # directory will be created in ${WORKINGDIR}/poky.
 # Default value is BUILD_PRJ=build
-BUILD_PRJ=build-valleyisland-64
+BUILD_PRJ=build-valleyisland
 
 # The IP address of the target machine (the machine on which Tizen will 
 # be installed).
